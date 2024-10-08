@@ -32,22 +32,22 @@ let map: Maps = new Maps({
 
 map.appendTo('#container');
 
-let Source: string;
-let Destination: string;
+let source: string;
+let destination: string;
 function initMap() {
   const directionsService = new google.maps.DirectionsService();
   const onButtonClick = function () {
-    Source = (
+    source = (
       document.getElementById('input') as HTMLInputElement
     ).value.toLowerCase();
-    Destination = (
+    destination = (
       document.getElementById('output') as HTMLInputElement
     ).value.toLowerCase();
     if (
-      Source !== null &&
-      Source !== '' &&
-      Destination !== null &&
-      Destination !== ''
+      source !== null &&
+      source !== '' &&
+      destination !== null &&
+      destination !== ''
     ) {
       calculateAndDisplayRoute(directionsService);
     }
@@ -62,10 +62,10 @@ function calculateAndDisplayRoute(directionsService: any) {
   directionsService
     .route({
       origin: {
-        query: Source,
+        query: source,
       },
       destination: {
-        query: Destination,
+        query: destination,
       },
       travelMode: google.maps.TravelMode.DRIVING,
     })
