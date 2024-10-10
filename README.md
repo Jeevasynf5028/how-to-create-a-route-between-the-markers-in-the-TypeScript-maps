@@ -1,2 +1,5 @@
-# How-to-create-a-route-between-the-markers-on-the-TypeScript-Maps-from-the-external-source
-This article explains how to obtain the coordinate points and integrate them into the Maps to plot a route between the designated locations in the TypeScript.
+# How-to-create-a-route-between-the-markers-in-the-TypeScript-maps
+
+This sample demonstrates how to obtain the coordinates for markers and navigation routes from the Google Maps Directions API and integrate them into the Syncfusion Maps to plot the route between designated locations.
+
+Add your key for the Google Maps Directions API to the **index.html** file located in the **src** folder.
