@@ -9,7 +9,7 @@
     "url": "https://github.com/syncfusion/ej2-quickstart.git"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "serve": "gulp e2e-serve",
     "test": "gulp e2e-test",
@@ -23,14 +23,14 @@
     "gulp": "*",
     "gulp-protractor": "*",
     "gulp-typescript": "*",
-    "html-webpack-plugin": "^5.5.0",
+    "html-webpack-plugin": "^5.6.0",
     "jasmine": "^2.6.0",
-    "mini-css-extract-plugin": "^2.7.0",
+    "mini-css-extract-plugin": "^2.7.6",
     "ts-loader": "^9.4.1",
     "typescript": "*",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0",
-    "webpack-dev-server": "^4.15.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.1",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
